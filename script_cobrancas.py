@@ -36,11 +36,8 @@ for sheet in df.keys():
     lista_alunos.append(aluno)
     sheet_count += 1
 
-# print(lista_alunos)
 
-# Retornar mês passado
-
-
+# Função para retornar mês passado
 def month_from_number(last_month_number):
     if last_month_number == 1:
         return "Janeiro"
@@ -73,12 +70,23 @@ last_month_name = month_from_number(last_month_number)
 
 
 # Função pra arredondar número apenas se tiver .0 como decimal
-
 def conditional_round(number):
     if number == int(number):
         return int(number)
     else:
         return number
+
+
+# Função pra retornar cumprimento (bom dia, boa tarde ou boa noite)
+def cumprimento():
+    hora_atual = datetime.now().hour
+
+    if 0 < hora_atual < 12:
+        return "Bom dia"
+    elif 12 <= hora_atual < 18:
+        return "Boa tarde"
+    elif 18 <= hora_atual < 23:
+        return "Boa noite"
 
 
 # Resetando cobrancas.txt:
@@ -87,16 +95,16 @@ with p.open('w', encoding='utf-8') as file:
     pass
 
 
-#
+# Escrevendo cobrancas.txt
 for aluno in lista_alunos:
     nome = aluno['Nome']
     datas = aluno['Datas']
     horas = aluno['Horas']
     preco = aluno['Preco']
-
+    cumprimentos = cumprimento()
     p = Path(__file__).with_name('cobrancas.txt')
     with p.open('a', encoding='utf-8') as file:
-        file.write(f'Boa tarde, {nome}. Segue o resumo das aulas de {
+        file.write(f'{cumprimentos}, {nome}. Segue o resumo das aulas de {
                    last_month_name}:\n\n')
 
         hours_count = 0

@@ -1,63 +1,82 @@
-Boa tarde, Carlos. Segue o resumo das aulas de Dezembro:
+Bom dia, Carlos. Segue o resumo das aulas de Janeiro:
 
-06/12 - 1h
-13/12 - 1h
-19/12 - 1h
-26/12 - 1h
-02/01 - 1h
+09/01 - 1h
+16/01 - 1h
+23/01 - 1h
 
-TOTAL: 5h * R$80.00 = R$400.00
+TOTAL: 3h * R$80.00 = R$240.00
 
 ###################################################################
 
-Boa tarde, Flávia. Segue o resumo das aulas de Dezembro:
+Bom dia, Flávia. Segue o resumo das aulas de Janeiro:
 
-12/12 - 1h
-17/12 - 1h
-19/12 - 1h
+07/01 - 1h
+09/01 - 1h
+14/01 - 1h
+16/01 - 1h
+23/01 - 1h
 
-TOTAL: 3h * R$70.00 = R$210.00
-
-###################################################################
-
-Boa tarde, Lorena. Segue o resumo das aulas de Dezembro:
-
-19/12 - 1h
-
-TOTAL: 1h * R$35.00 = R$35.00
+TOTAL: 5h * R$70.00 = R$350.00
 
 ###################################################################
 
-Boa tarde, Matheus. Segue o resumo das aulas de Dezembro:
+Bom dia, Luciana. Segue o resumo das aulas de Janeiro:
 
-20/12 - 2h
-27/12 - 2h
-03/01 - 2h
+17/01 - 2h
+23/01 - 2h
+31/01 - 1.5h
+03/02 - 1.5h
 
-TOTAL: 6h * R$60.00 = R$360.00
+Lembrando que combinamos de mudar o valor das aulas de 1:30h pra R$70.00. Portanto o total seria:
+
+4h * R$60.00 = R$240.00 +
+3h * R$70.00 = R$210.00
+= *R$450,00*
 
 ###################################################################
 
-Boa tarde, Pedro. Segue o resumo das aulas de Dezembro:
+Bom dia, Pedro. Segue o resumo das aulas de Janeiro:
+
+30/01 - 1.5h
+03/02 - 1.5h
+
+TOTAL: 3h * R$60.00 = R$180.00
+
+###################################################################
+
+Bom dia, Raquel. Segue o resumo das aulas de Janeiro:
+
+08/01 - 2h
+15/01 - 2h
+22/01 - 2h
+29/01 - 2h
+
+TOTAL: 8h * R$62.50 = R$500.00
+
+###################################################################
+
+Bom dia, Silvano. Segue o resumo das aulas de Janeiro:
+
+10/01 - 2h
+17/01 - 1.33h
+24/01 - 2h
+04/02 - 1h
+
+TOTAL: 6.33h * R$62.50 = R$395.62
+
+###################################################################
+
+Bom dia, Pedro. Segue o resumo das aulas de Janeiro:
 
 
 TOTAL: 0h * R$70.00 = R$0.00
 
 ###################################################################
 
-Boa tarde, Raldianny. Segue o resumo das aulas de Dezembro:
+Bom dia, Raldianny. Segue o resumo das aulas de Janeiro:
 
 
 TOTAL: 0h * R$70.00 = R$0.00
-
-###################################################################
-
-Boa tarde, Silvano. Segue o resumo das aulas de Dezembro:
-
-13/12 - 2h
-18/12 - 2h
-
-TOTAL: 4h * R$62.50 = R$250.00
 
 ###################################################################
 
