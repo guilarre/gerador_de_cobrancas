@@ -4,64 +4,74 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 import pandas as pd
+from openpyxl import load_workbook
+
+file_path = 'Controle pagamentos - aulas de inglês.xlsx'
 
 # Dataframe geral com todos os worksheets
-df = pd.read_excel(
-    'Controle pagamentos - aulas de inglês.xlsx', sheet_name=None)
+df = pd.read_excel(file_path, sheet_name=None, decimal=',')
 
 # Lista com cada sheet como dataframe
 lista_alunos = []
 
+# Criando uma lista apenas das planilhas que estão visíveis
+# (i.e. não ocultas no excel)
+# Obs. tem que usar o load_workbook do openpyxl pra poder
+# verificar visibilidade
+wb = load_workbook(file_path)
+visible_sheets = [sheet.title for sheet in wb.worksheets if sheet.sheet_state == 'visible']
+
 # Criar lista de alunos como dicionários
 sheet_count = 0
 for sheet in df.keys():
-    df_sheet = pd.read_excel(
-        'Controle pagamentos - aulas de inglês.xlsx', sheet_name=sheet)
+    if sheet in visible_sheets:
+        df_sheet = pd.read_excel(
+            'Controle pagamentos - aulas de inglês.xlsx', sheet_name=sheet)
 
-    aluno = {}
+        aluno = {}
 
-    nome = df_sheet['Aluno'][0]
-    aluno['Nome'] = nome
+        nome = df_sheet['Aluno'][0]
+        aluno['Nome'] = nome
 
-    aluno['Datas'] = []
-    for data in df_sheet['Data']:
-        aluno['Datas'].append(data)
+        aluno['Datas'] = []
+        for data in df_sheet['Data']:
+            aluno['Datas'].append(data)
 
-    aluno['Horas'] = []
-    for horas in df_sheet['Horas de aula']:
-        aluno['Horas'].append(horas)
+        aluno['Horas'] = []
+        for horas in df_sheet['Horas de aula']:
+            aluno['Horas'].append(horas)
 
-    aluno['Preco'] = df_sheet['Hora/aula (R$)'][0]
+        aluno['Preco'] = df_sheet['Hora/aula (R$)'][0]
 
-    lista_alunos.append(aluno)
-    sheet_count += 1
+        lista_alunos.append(aluno)
+        sheet_count += 1
 
 
 # Função para retornar mês passado
-def month_from_number(last_month_number):
-    if last_month_number == 1:
+def month_from_number(month_number):
+    if month_number == 1:
         return "Janeiro"
-    elif last_month_number == 2:
+    elif month_number == 2:
         return "Fevereiro"
-    elif last_month_number == 3:
+    elif month_number == 3:
         return "Março"
-    elif last_month_number == 4:
+    elif month_number == 4:
         return "Abril"
-    elif last_month_number == 5:
+    elif month_number == 5:
         return "Maio"
-    elif last_month_number == 6:
+    elif month_number == 6:
         return "Junho"
-    elif last_month_number == 7:
+    elif month_number == 7:
         return "Julho"
-    elif last_month_number == 8:
+    elif month_number == 8:
         return "Agosto"
-    elif last_month_number == 9:
+    elif month_number == 9:
         return "Setembro"
-    elif last_month_number == 10:
+    elif month_number == 10:
         return "Outubro"
-    elif last_month_number == 11:
+    elif month_number == 11:
         return "Novembro"
-    elif last_month_number == 12:
+    elif month_number == 12:
         return "Dezembro"
 
 
@@ -71,10 +81,13 @@ last_month_name = month_from_number(last_month_number)
 
 # Função pra arredondar número apenas se tiver .0 como decimal
 def conditional_round(number):
-    if number == int(number):
-        return int(number)
-    else:
-        return number
+    try:
+        if number == int(number):
+            return int(number)
+        else:
+            return number
+    except ValueError:
+        pass
 
 
 # Função pra retornar cumprimento (bom dia, boa tarde ou boa noite)
@@ -109,9 +122,9 @@ for aluno in lista_alunos:
 
         hours_count = 0
         for data, hora in zip(datas, horas):
-            if data.month == last_month_number and data.day > 5:
+            if data.month == last_month_number and data.day > 5 and data.year == datetime.now().year:
                 pass
-            elif data.month == datetime.now().month and data.day <= 5:
+            elif data.month == datetime.now().month and data.day <= 5 and data.year == datetime.now().year:
                 pass
             else:
                 continue
