@@ -1,65 +1,50 @@
-Boa noite, Luciana. Segue o resumo das aulas de Janeiro:
+Boa noite, Luciana. Segue o resumo das aulas de Março:
 
+24/03 - 1.5h
+03/04 - 1.5h
 
-TOTAL: 0h * R$70.00 = R$0.00
-
-###################################################################
-
-Boa noite, Rodolfo. Segue o resumo das aulas de Janeiro:
-
-06/01 - 1h
-13/01 - 1h
-20/01 - 1h
-27/01 - 1h
-05/02 - 1h
-
-TOTAL: 5h * R$100.00 = R$500.00
+TOTAL: 3h * R$70.00 = R$210.00
 
 ###################################################################
 
-Boa noite, Alexandre. Segue o resumo das aulas de Janeiro:
+Boa noite, Rodolfo. Segue o resumo das aulas de Março:
 
-16/01 - 1h
-23/01 - 1h
-30/01 - 1h
+12/03 - 1h
+19/03 - 1h
+26/03 - 1h
 
 TOTAL: 3h * R$100.00 = R$300.00
 
 ###################################################################
 
-Boa noite, Adriana. Segue o resumo das aulas de Janeiro:
+Boa noite, Alexandre. Segue o resumo das aulas de Março:
 
-22/01 - 1.5h
-28/01 - 1.5h
-04/02 - 1.5h
+06/03 - 2h
+13/03 - 2h
+20/03 - 2h
+25/03 - 2h
 
-TOTAL: 4.5h * R$80.00 = R$360.00
+TOTAL: 8h * R$100.00 = R$800.00
 
 ###################################################################
 
-Boa noite, Emmily. Segue o resumo das aulas de Janeiro:
+Boa noite, Luiza. Segue o resumo das aulas de Março:
 
-15/01 - 1.5h
-23/01 - 1.5h
-30/01 - 1.5h
-05/02 - 1.5h
+06/03 - 2h
+19/03 - 2h
+
+TOTAL: 4h * R$100.00 = R$400.00
+
+###################################################################
+
+Boa noite, Adriana. Segue o resumo das aulas de Março:
+
+09/03 - 1.5h
+13/03 - 1.5h
+16/03 - 1.5h
+23/03 - 1.5h
 
 TOTAL: 6h * R$80.00 = R$480.00
-
-###################################################################
-
-Boa noite, Raldianny. Segue o resumo das aulas de Janeiro:
-
-22/01 - 1.5h
-
-TOTAL: 1.5h * R$70.00 = R$105.00
-
-###################################################################
-
-Boa noite, Welearn. Segue o resumo das aulas de Janeiro:
-
-
-TOTAL: 0h * R$40.00 = R$0.00
 
 ###################################################################
 
