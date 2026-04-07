@@ -4,4 +4,4 @@ Script em Python desenvolvido por mim para gerar um textinho contendo a quantida
 Os dados são importados de um arquivo .xlsx (Excel).
 
 # TODO
-- considerar ANO da data também pra não haver repetição no ano seguinte
+- all done
